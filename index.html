@@ -27,7 +27,7 @@
 				-moz-osx-font-smoothing: grayscale;
 				-webkit-font-smoothing: antialiased;
 				font-family: 'Times New Roman', serif;
-				font-size: 7vmax;
+				font-size: 4vmax;
 				font-weight: bold;
 				text-rendering: optimizeLegibility;
 				text-shadow: 0 0 1vmax violet, 0 0 2vmax violet;
@@ -36,6 +36,7 @@
 				position: fixed;
 				top: 50%;
 				left: 50%;
+				direction: ltr;
 				transform: translate(-50%, -50%) skewY(10deg);
 				transition: all 600ms cubic-bezier(.19, 1, .22, 1);
 				-o-user-select: none;
@@ -47,10 +48,9 @@
 				z-index: 1;
 			}
 			header:hover {
-				font-size: 12vmax;
-				letter-spacing: 2vmax;
-				text-shadow: 0 0 3vmax violet, 0 0 20vmax violet, 0 0 20vmax violet, 0 0 20vmax violet;
-				transition: all 3700ms;
+				direction: rtl;
+				transform: rotate(-180deg);
+				unicode-bidi: bidi-override;
 			}
 			header:hover + .duh {
 				background-size: 500% 500%;
@@ -63,7 +63,7 @@
 			}
 		</style>
 			<audio src="/lastresort.mp3" preload="auto" autoplay="autoplay" type="audio/mpeg"></audio>
-			<header><a href="https://github.com/geoffrepoli" target="_blank">welcome to my page</a></header>
+			<header><a href="https://github.com/geoffrepoli" target="_blank">welcome to my webpage please sign my guestbook if you like my webpage and if you did not like my webpage tell me why in my guestbook anyways thanks for visiting</a></header>
 			<div class="duh"></div>
 	</body>
 </html>
